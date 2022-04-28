@@ -1,6 +1,7 @@
 package com.guipalm4.codeflix.admin.catalogo.category;
 
 import com.guipalm4.codeflix.admin.catalogo.AggregateRoot;
+import com.guipalm4.codeflix.admin.catalogo.validation.ValidationHandler;
 
 import java.time.Instant;
 
@@ -13,7 +14,7 @@ public class Category extends AggregateRoot<CategoryID> {
     private Instant updatedAt;
     private Instant deletedAt;
 
-    public Category(final CategoryID aId,
+    private Category(final CategoryID aId,
                     final String aName,
                     final String aDescription,
                     final boolean isActive,
@@ -35,6 +36,11 @@ public class Category extends AggregateRoot<CategoryID> {
         final var now = Instant.now();
 
         return new Category(id, aName, aDescription, isActive, now, now, null);
+    }
+
+    @Override
+    public void validate(ValidationHandler handler) {
+        new CategoryValidator(this, handler).validate();
     }
 
     public CategoryID getId() {
