@@ -10,7 +10,8 @@ public class ThrowsValidationHandler implements ValidationHandler {
 
     @Override
     public ValidationHandler append(final Error anError) {
-        throw DomainException.with(List.of(anError));
+
+        throw DomainException.with(anError);
     }
 
     @Override
@@ -23,7 +24,7 @@ public class ThrowsValidationHandler implements ValidationHandler {
         try{
             aValidation.validate();
         } catch (Exception e) {
-            throw DomainException.with(List.of(new Error(e.getMessage())));
+            throw DomainException.with(new Error(e.getMessage()));
         }
         return this;
     }
