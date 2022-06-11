@@ -1,10 +1,6 @@
 package com.guipalm4.codeflix.admin.catalogo;
 
-import com.guipalm4.codeflix.admin.catalogo.category.Category;
+public abstract class UseCase<IN, OUT> {
 
-public class UseCase {
-
-    public Category execute() {
-        return Category.newCategory("Filmes", null, true);
-    }
+    public abstract OUT execute(IN anIn);
 }
