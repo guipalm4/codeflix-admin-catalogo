@@ -3,6 +3,7 @@ package com.guipalm4.codeflix.admin.catalogo.category.create;
 import com.guipalm4.codeflix.admin.catalogo.category.Category;
 import com.guipalm4.codeflix.admin.catalogo.category.CategoryGateway;
 import com.guipalm4.codeflix.admin.catalogo.validation.handler.Notification;
+import io.vavr.API;
 import io.vavr.control.Either;
 
 import java.util.Objects;
@@ -27,11 +28,13 @@ public class DefaultCreateCategoryUseCase extends CreateCategoryUseCase {
 
         aCategory.validate(notification);
 
-        if (notification.hasError()) {
-            //
-        }
+        return notification.hasError() ? API.Left(notification) : create(aCategory);
+    }
 
-        return CreateCategoryOutput.from(this.categoryGateway.create(aCategory));
+    private Either<Notification, CreateCategoryOutput> create(Category aCategory) {
+        return API.Try(()-> this.categoryGateway.create(aCategory))
+                .toEither()
+                .bimap(Notification::create, CreateCategoryOutput::from);
     }
 
 }
