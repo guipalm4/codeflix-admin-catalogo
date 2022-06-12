@@ -3,7 +3,7 @@ package com.guipalm4.codeflix.admin.catalogo.category.create;
 import com.guipalm4.codeflix.admin.catalogo.category.Category;
 import com.guipalm4.codeflix.admin.catalogo.category.CategoryGateway;
 import com.guipalm4.codeflix.admin.catalogo.validation.handler.Notification;
-import com.guipalm4.codeflix.admin.catalogo.validation.handler.ThrowsValidationHandler;
+import io.vavr.control.Either;
 
 import java.util.Objects;
 
@@ -16,7 +16,7 @@ public class DefaultCreateCategoryUseCase extends CreateCategoryUseCase {
     }
 
     @Override
-    public CreateCategoryOutput execute(final CreateCategoryCommand aCommand) {
+    public Either<Notification, CreateCategoryOutput> execute(final CreateCategoryCommand aCommand) {
         final var aName = aCommand.name();
         final var aDescription = aCommand.description();
         final var isActive = aCommand.isActive();
