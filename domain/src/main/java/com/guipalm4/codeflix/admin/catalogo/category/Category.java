@@ -5,7 +5,7 @@ import com.guipalm4.codeflix.admin.catalogo.validation.ValidationHandler;
 
 import java.time.Instant;
 
-public class Category extends AggregateRoot<CategoryID> {
+public class Category extends AggregateRoot<CategoryID> implements Cloneable {
 
     private String name;
     private String description;
@@ -36,6 +36,10 @@ public class Category extends AggregateRoot<CategoryID> {
         final var now = Instant.now();
         final var deletedAt = isActive ? null : now;
         return new Category(id, aName, aDescription, isActive, now, now, deletedAt);
+    }
+
+    public static Category clone(Category aCategory) {
+        return aCategory.clone();
     }
 
     @Override
@@ -104,5 +108,15 @@ public class Category extends AggregateRoot<CategoryID> {
         this.description = aDescription;
         this.updatedAt = Instant.now();
         return this;
+    }
+
+    @Override
+    public Category clone() {
+        try {
+            Category clone = (Category) super.clone();
+            return clone;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
     }
 }

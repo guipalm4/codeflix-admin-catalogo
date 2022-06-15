@@ -46,7 +46,7 @@ public class UpdateCategoryUseCaseTest {
         );
 
         when(gateway.findById(eq(expectedId)))
-                .thenReturn(Optional.of(aCategory));
+                .thenReturn(Optional.of(Category.clone(aCategory)));
 
         when(gateway.update(any()))
                 .thenAnswer(returnsFirstArg());
@@ -64,9 +64,8 @@ public class UpdateCategoryUseCaseTest {
                                 && Objects.equals(expectedActive, aUpdateCategory.isActive())
                                 && Objects.equals(expectedId, aUpdateCategory.getId())
                                 && Objects.equals(aCategory.getCreatedAt(), aUpdateCategory.getCreatedAt())
-                                && Objects.equals(aCategory.getUpdatedAt(), aUpdateCategory.getUpdatedAt()) //TODO: Fix assertion
+                                && aCategory.getUpdatedAt().isBefore(aUpdateCategory.getUpdatedAt())
                                 && Objects.isNull(aCategory.getDeletedAt())
-
         ));
     }
 
