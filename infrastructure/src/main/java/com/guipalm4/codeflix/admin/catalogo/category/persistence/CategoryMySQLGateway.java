@@ -7,7 +7,6 @@ import com.guipalm4.codeflix.admin.catalogo.category.CategorySearchQuery;
 import com.guipalm4.codeflix.admin.catalogo.pagination.Pagination;
 import org.springframework.stereotype.Service;
 
-import java.util.Objects;
 import java.util.Optional;
 
 @Service
@@ -15,8 +14,8 @@ public class CategoryMySQLGateway implements CategoryGateway {
 
     private final CategoryRepository repository;
 
-    public CategoryMySQLGateway(CategoryRepository repository) {
-        this.repository = Objects.requireNonNull(repository);
+    public CategoryMySQLGateway(final CategoryRepository repository) {
+        this.repository = repository;
     }
 
     @Override

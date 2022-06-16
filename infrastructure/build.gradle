@@ -30,13 +30,18 @@ repositories {
 dependencies {
     implementation(project(":domain"))
     implementation(project(":application"))
+
     implementation('mysql:mysql-connector-java')
+
     implementation('org.springframework.boot:spring-boot-starter-web') {
         exclude module: 'spring-boot-starter-tomcat'
     }
     implementation('org.springframework.boot:spring-boot-starter-undertow')
     implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+
+    testImplementation('org.flywaydb:flyway-core')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
+
     testRuntimeOnly('com.h2database:h2')
 }
 
@@ -45,7 +50,6 @@ flyway {
     user = System.getenv('FLYWAY_USER') ?: 'root'
     password = System.getenv('FLYWAY_PASS') ?: '123456'
 }
-
 
 test {
     useJUnitPlatform()
