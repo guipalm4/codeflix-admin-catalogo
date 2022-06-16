@@ -1,16 +1,25 @@
+buildscript {
+    repositories{
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.flywaydb:flyway-mysql:8.5.13'
+    }
+}
+
 plugins {
     id 'java'
     id 'application'
     id 'org.springframework.boot' version '2.6.7'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
-
+    id "org.flywaydb.flyway" version "8.5.13"
 }
 
 group 'com.guipalm4.codeflix.admin.catalogo.infrastructure'
 version '1.0-SNAPSHOT'
 
 bootJar {
-    archiveName 'codeflix-adm.jar'
+    archiveFileName.set("codeflix-adm.jar")
     destinationDirectory.set(file("${rootProject.buildDir}/libs"))
 }
 
@@ -30,6 +39,13 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test')
     testRuntimeOnly('com.h2database:h2')
 }
+
+flyway {
+    url = System.getenv('FLYWAY_DB') ?: 'jdbc:mysql://localhost:3306/adm_videos'
+    user = System.getenv('FLYWAY_USER') ?: 'root'
+    password = System.getenv('FLYWAY_PASS') ?: '123456'
+}
+
 
 test {
     useJUnitPlatform()
