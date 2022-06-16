@@ -4,3 +4,8 @@ mysql:
   password: ${DATABASE_MYSQL_PASSWORD:123456}
   schema: adm_videos
 
+spring:
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: none
