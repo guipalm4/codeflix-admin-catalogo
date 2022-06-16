@@ -1,8 +1,9 @@
-package com.guipalm4.codeflix.admin.catalogo.category.retrieve;
+package com.guipalm4.codeflix.admin.catalogo.category.retrieve.get;
 
 import com.guipalm4.codeflix.admin.catalogo.category.Category;
 import com.guipalm4.codeflix.admin.catalogo.category.CategoryGateway;
 import com.guipalm4.codeflix.admin.catalogo.category.CategoryID;
+import com.guipalm4.codeflix.admin.catalogo.category.retrieve.get.DefaultGetCategoryByIdUseCase;
 import com.guipalm4.codeflix.admin.catalogo.exceptions.DomainException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -21,7 +22,7 @@ import static org.mockito.Mockito.*;
 public class GetCategoryByIdUseCaseTest {
 
     @InjectMocks
-    private DefaultCategoryByIdUseCase useCase;
+    private DefaultGetCategoryByIdUseCase useCase;
 
     @Mock
     private CategoryGateway gateway;
@@ -43,11 +44,10 @@ public class GetCategoryByIdUseCaseTest {
         when(gateway.findById(eq(expectedId)))
                 .thenReturn(Optional.of(Category.clone(aCategory)));
 
-        Mockito.verify(gateway, times(1)).findById(expectedId);
-
         final var actualCategory = useCase.execute(expectedId.getValue());
 
-        Assertions.assertEquals(expectedId, actualCategory.id());
+        Mockito.verify(gateway, times(1)).findById(expectedId);
+        Assertions.assertEquals(expectedId.getValue(), actualCategory.id());
         Assertions.assertEquals(expectedName, actualCategory.name());
         Assertions.assertEquals(expectedDescription, actualCategory.description());
         Assertions.assertEquals(aCategory.getCreatedAt(), actualCategory.createdAt());
@@ -75,7 +75,9 @@ public class GetCategoryByIdUseCaseTest {
 
     @Test
     void givenAValid_WhenGatewayThrowsException_ThenReturnException() {
-        final var aCategory = Category.newCategory("Filme", "A Categoria mais assistida", true);
+        final var aCategory = Category.newCategory(
+                "Filme", "A Categoria mais assistida", true
+        );
         final var expectedId = aCategory.getId();
         final var expectedErrorMessage = "Gateway error";
 
