@@ -331,5 +331,4 @@ public class CategoryMySQLGatewayTest {
         Assertions.assertEquals(expectedPerPage, actualResult.items().size());
         Assertions.assertEquals(filmes.getId(), actualResult.items().get(0).getId());
     }
-
 }

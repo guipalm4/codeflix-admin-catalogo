@@ -14,6 +14,7 @@ public record Pagination<T>(
         final List<R> aNewList = this.items.stream()
                 .map(mapper)
                 .toList();
+
         return new Pagination<>(currentPage(), perPage(), total(), aNewList);
     }
 
