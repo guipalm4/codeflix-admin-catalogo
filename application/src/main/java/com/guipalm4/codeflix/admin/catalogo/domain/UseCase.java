@@ -1,4 +1,4 @@
-package com.guipalm4.codeflix.admin.catalogo;
+package com.guipalm4.codeflix.admin.catalogo.domain;
 
 public abstract class UseCase<IN, OUT> {
 
