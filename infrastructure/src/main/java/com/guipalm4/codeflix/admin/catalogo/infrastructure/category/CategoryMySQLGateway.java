@@ -1,16 +1,14 @@
 package com.guipalm4.codeflix.admin.catalogo.infrastructure.category;
 
-import com.guipalm4.codeflix.admin.catalogo.domain.category.Category;
-import com.guipalm4.codeflix.admin.catalogo.domain.category.CategoryGateway;
-import com.guipalm4.codeflix.admin.catalogo.domain.category.CategoryID;
-import com.guipalm4.codeflix.admin.catalogo.domain.category.CategorySearchQuery;
-import com.guipalm4.codeflix.admin.catalogo.domain.pagination.Pagination;
+import com.guipalm4.codeflix.admin.catalogo.application.category.Category;
+import com.guipalm4.codeflix.admin.catalogo.application.category.CategoryGateway;
+import com.guipalm4.codeflix.admin.catalogo.application.category.CategoryID;
+import com.guipalm4.codeflix.admin.catalogo.application.category.CategorySearchQuery;
+import com.guipalm4.codeflix.admin.catalogo.application.pagination.Pagination;
 import com.guipalm4.codeflix.admin.catalogo.infrastructure.category.persistence.CategoryJpaEntity;
 import com.guipalm4.codeflix.admin.catalogo.infrastructure.category.persistence.CategoryRepository;
-import com.guipalm4.codeflix.admin.catalogo.infrastructure.utils.SpecificationUtils;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
-import org.springframework.data.domain.Sort.Direction;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
