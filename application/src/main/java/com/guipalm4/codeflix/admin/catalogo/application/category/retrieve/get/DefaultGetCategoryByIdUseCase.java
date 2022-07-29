@@ -1,9 +1,9 @@
 package com.guipalm4.codeflix.admin.catalogo.application.category.retrieve.get;
 
-import com.guipalm4.codeflix.admin.catalogo.application.category.CategoryGateway;
-import com.guipalm4.codeflix.admin.catalogo.application.category.CategoryID;
-import com.guipalm4.codeflix.admin.catalogo.application.exceptions.DomainException;
-import com.guipalm4.codeflix.admin.catalogo.application.validation.Error;
+import com.guipalm4.codeflix.admin.domain.category.CategoryGateway;
+import com.guipalm4.codeflix.admin.domain.category.CategoryID;
+import com.guipalm4.codeflix.admin.domain.exceptions.DomainException;
+import com.guipalm4.codeflix.admin.domain.validation.Error;
 
 import java.util.Objects;
 import java.util.function.Supplier;

@@ -1,8 +1,8 @@
 package com.guipalm4.codeflix.admin.catalogo.application.category.retrieve.list;
 
-import com.guipalm4.codeflix.admin.catalogo.application.category.CategoryGateway;
-import com.guipalm4.codeflix.admin.catalogo.application.category.CategorySearchQuery;
-import com.guipalm4.codeflix.admin.catalogo.application.pagination.Pagination;
+import com.guipalm4.codeflix.admin.domain.category.CategoryGateway;
+import com.guipalm4.codeflix.admin.domain.category.CategorySearchQuery;
+import com.guipalm4.codeflix.admin.domain.pagination.Pagination;
 
 import java.util.Objects;
 

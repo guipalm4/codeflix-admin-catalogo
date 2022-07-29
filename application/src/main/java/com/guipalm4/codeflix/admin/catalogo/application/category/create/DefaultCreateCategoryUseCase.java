@@ -1,8 +1,8 @@
 package com.guipalm4.codeflix.admin.catalogo.application.category.create;
 
-import com.guipalm4.codeflix.admin.catalogo.application.category.Category;
-import com.guipalm4.codeflix.admin.catalogo.application.category.CategoryGateway;
-import com.guipalm4.codeflix.admin.catalogo.application.validation.handler.Notification;
+import com.guipalm4.codeflix.admin.domain.category.Category;
+import com.guipalm4.codeflix.admin.domain.category.CategoryGateway;
+import com.guipalm4.codeflix.admin.domain.validation.handler.Notification;
 import io.vavr.API;
 import io.vavr.control.Either;
 

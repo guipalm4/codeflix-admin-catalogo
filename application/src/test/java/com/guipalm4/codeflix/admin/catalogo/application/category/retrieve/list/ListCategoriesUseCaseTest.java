@@ -1,9 +1,9 @@
 package com.guipalm4.codeflix.admin.catalogo.application.category.retrieve.list;
 
-import com.guipalm4.codeflix.admin.catalogo.application.category.Category;
-import com.guipalm4.codeflix.admin.catalogo.application.category.CategoryGateway;
-import com.guipalm4.codeflix.admin.catalogo.application.category.CategorySearchQuery;
-import com.guipalm4.codeflix.admin.catalogo.application.pagination.Pagination;
+import com.guipalm4.codeflix.admin.domain.category.Category;
+import com.guipalm4.codeflix.admin.domain.category.CategoryGateway;
+import com.guipalm4.codeflix.admin.domain.category.CategorySearchQuery;
+import com.guipalm4.codeflix.admin.domain.pagination.Pagination;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

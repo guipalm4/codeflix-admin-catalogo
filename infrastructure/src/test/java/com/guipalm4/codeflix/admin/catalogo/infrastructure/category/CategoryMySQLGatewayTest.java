@@ -1,11 +1,11 @@
 package com.guipalm4.codeflix.admin.catalogo.infrastructure.category;
 
-import com.guipalm4.codeflix.admin.catalogo.application.category.Category;
-import com.guipalm4.codeflix.admin.catalogo.application.category.CategoryID;
-import com.guipalm4.codeflix.admin.catalogo.application.category.CategorySearchQuery;
+import com.guipalm4.codeflix.admin.catalogo.MySQLGatewayTest;
 import com.guipalm4.codeflix.admin.catalogo.infrastructure.category.persistence.CategoryJpaEntity;
 import com.guipalm4.codeflix.admin.catalogo.infrastructure.category.persistence.CategoryRepository;
-import com.guipalm4.codeflix.admin.catalogo.MySQLGatewayTest;
+import com.guipalm4.codeflix.admin.domain.category.Category;
+import com.guipalm4.codeflix.admin.domain.category.CategoryID;
+import com.guipalm4.codeflix.admin.domain.category.CategorySearchQuery;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

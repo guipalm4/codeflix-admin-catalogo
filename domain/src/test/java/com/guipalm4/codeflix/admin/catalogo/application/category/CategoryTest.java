@@ -1,7 +1,8 @@
 package com.guipalm4.codeflix.admin.catalogo.application.category;
 
-import com.guipalm4.codeflix.admin.catalogo.application.exceptions.DomainException;
-import com.guipalm4.codeflix.admin.catalogo.application.validation.handler.ThrowsValidationHandler;
+import com.guipalm4.codeflix.admin.domain.category.Category;
+import com.guipalm4.codeflix.admin.domain.exceptions.DomainException;
+import com.guipalm4.codeflix.admin.domain.validation.handler.ThrowsValidationHandler;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

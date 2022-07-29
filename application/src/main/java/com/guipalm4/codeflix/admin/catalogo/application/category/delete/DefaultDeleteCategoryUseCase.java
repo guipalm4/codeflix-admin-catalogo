@@ -1,7 +1,7 @@
 package com.guipalm4.codeflix.admin.catalogo.application.category.delete;
 
-import com.guipalm4.codeflix.admin.catalogo.application.category.CategoryGateway;
-import com.guipalm4.codeflix.admin.catalogo.application.category.CategoryID;
+import com.guipalm4.codeflix.admin.domain.category.CategoryGateway;
+import com.guipalm4.codeflix.admin.domain.category.CategoryID;
 
 import java.util.Objects;
 

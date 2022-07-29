@@ -1,4 +1,4 @@
-package com.guipalm4.codeflix.admin.catalogo.application.exceptions;
+package com.guipalm4.codeflix.admin.domain.exceptions;
 
 public class NoStacktraceException extends RuntimeException {
 

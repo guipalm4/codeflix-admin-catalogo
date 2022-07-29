@@ -1,11 +1,11 @@
 package com.guipalm4.codeflix.admin.catalogo.application.category.update;
 
-import com.guipalm4.codeflix.admin.catalogo.application.category.Category;
-import com.guipalm4.codeflix.admin.catalogo.application.category.CategoryGateway;
-import com.guipalm4.codeflix.admin.catalogo.application.category.CategoryID;
-import com.guipalm4.codeflix.admin.catalogo.application.exceptions.DomainException;
-import com.guipalm4.codeflix.admin.catalogo.application.validation.Error;
-import com.guipalm4.codeflix.admin.catalogo.application.validation.handler.Notification;
+import com.guipalm4.codeflix.admin.domain.category.Category;
+import com.guipalm4.codeflix.admin.domain.category.CategoryGateway;
+import com.guipalm4.codeflix.admin.domain.category.CategoryID;
+import com.guipalm4.codeflix.admin.domain.exceptions.DomainException;
+import com.guipalm4.codeflix.admin.domain.validation.Error;
+import com.guipalm4.codeflix.admin.domain.validation.handler.Notification;
 import io.vavr.control.Either;
 
 import java.util.Objects;

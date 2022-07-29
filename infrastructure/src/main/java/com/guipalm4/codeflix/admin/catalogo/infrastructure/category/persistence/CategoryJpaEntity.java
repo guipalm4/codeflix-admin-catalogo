@@ -2,8 +2,8 @@ package com.guipalm4.codeflix.admin.catalogo.infrastructure.category.persistence
 
 
 
-import com.guipalm4.codeflix.admin.catalogo.application.category.Category;
-import com.guipalm4.codeflix.admin.catalogo.application.category.CategoryID;
+import com.guipalm4.codeflix.admin.domain.category.Category;
+import com.guipalm4.codeflix.admin.domain.category.CategoryID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

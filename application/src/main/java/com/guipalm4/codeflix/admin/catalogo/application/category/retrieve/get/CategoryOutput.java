@@ -1,6 +1,6 @@
 package com.guipalm4.codeflix.admin.catalogo.application.category.retrieve.get;
 
-import com.guipalm4.codeflix.admin.catalogo.application.category.Category;
+import com.guipalm4.codeflix.admin.domain.category.Category;
 
 import java.time.Instant;
 

@@ -1,6 +1,6 @@
-package com.guipalm4.codeflix.admin.catalogo.application;
+package com.guipalm4.codeflix.admin.domain;
 
-import com.guipalm4.codeflix.admin.catalogo.application.validation.ValidationHandler;
+import com.guipalm4.codeflix.admin.domain.validation.ValidationHandler;
 
 import java.util.Objects;
 
