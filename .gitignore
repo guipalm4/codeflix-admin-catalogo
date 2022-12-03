@@ -98,3 +98,4 @@ gradle-app.setting
 
 # From https://github.com/github/gitignore/blob/master/Java.gitignore
 *.class
+.tool-versions
