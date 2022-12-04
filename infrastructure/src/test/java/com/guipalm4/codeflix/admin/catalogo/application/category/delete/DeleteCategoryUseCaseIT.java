@@ -63,9 +63,7 @@ public class DeleteCategoryUseCaseIT {
 
     @Test
     public void givenAValidId_whenGatewayThrowsException_shouldReturnException() {
-        final var aCategory = Category.newCategory("Filmes",
-                                                   "A categoria mais assistida",
-                                                   true);
+        final var aCategory = Category.newCategory("Filmes", "A categoria mais assistida", true);
         final var expectedId = aCategory.getId();
 
         doThrow(new IllegalStateException("Gateway error"))
@@ -80,8 +78,8 @@ public class DeleteCategoryUseCaseIT {
     private void save(final Category... aCategory) {
         categoryRepository.saveAllAndFlush(
                 Arrays.stream(aCategory)
-                        .map(CategoryJpaEntity::from)
-                        .toList()
+                      .map(CategoryJpaEntity::from)
+                      .toList()
         );
     }
 }
