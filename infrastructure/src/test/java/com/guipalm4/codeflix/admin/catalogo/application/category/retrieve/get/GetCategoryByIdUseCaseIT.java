@@ -1,4 +1,4 @@
-package com.guipalm4.codeflix.admin.catalogo.application.category.retrieve;
+package com.guipalm4.codeflix.admin.catalogo.application.category.retrieve.get;
 
 import com.guipalm4.codeflix.admin.catalogo.IntegrationTest;
 import com.guipalm4.codeflix.admin.catalogo.application.category.retrieve.get.GetCategoryByIdUseCase;
