@@ -10,7 +10,7 @@ import com.guipalm4.codeflix.admin.catalogo.application.category.retrieve.list.D
 import com.guipalm4.codeflix.admin.catalogo.application.category.retrieve.list.ListCategoriesUseCase;
 import com.guipalm4.codeflix.admin.catalogo.application.category.update.DefaultUpdateCategoryUseCase;
 import com.guipalm4.codeflix.admin.catalogo.application.category.update.UpdateCategoryUseCase;
-import com.guipalm4.codeflix.admin.domain.category.CategoryGateway;
+import com.guipalm4.codeflix.admin.catalogo.domain.category.CategoryGateway;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

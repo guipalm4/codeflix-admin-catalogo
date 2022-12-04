@@ -2,7 +2,7 @@ package com.guipalm4.codeflix.admin.catalogo.application.category.create;
 
 import com.guipalm4.codeflix.admin.catalogo.IntegrationTest;
 import com.guipalm4.codeflix.admin.catalogo.infrastructure.category.persistence.CategoryRepository;
-import com.guipalm4.codeflix.admin.domain.category.CategoryGateway;
+import com.guipalm4.codeflix.admin.catalogo.domain.category.CategoryGateway;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
