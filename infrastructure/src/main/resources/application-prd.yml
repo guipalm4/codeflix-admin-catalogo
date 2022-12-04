@@ -1,7 +1,7 @@
 mysql:
   url: ${DATABASE_MSQL_URL:localhost:3306}
   username: ${DATABASE_MYSQL_USERNAME:localhostroot}
-  password: ${DATABASE_MYSQL_PASSWORD:123456}
+  password: ${DATABASE_MYSQL_PASSWORD:Crip@@4071}
   schema: adm_videos
 
 spring:

@@ -47,4 +47,5 @@ public class CategoryUseCaseConfig {
     public DeleteCategoryUseCase deleteCategoryUseCase() {
         return new DefaultDeleteCategoryUseCase(categoryGateway);
     }
+
 }
