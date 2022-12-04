@@ -1,4 +1,4 @@
-package com.guipalm4.codeflix.admin.domain.pagination;
+package com.guipalm4.codeflix.admin.catalogo.domain.pagination;
 
 import java.util.List;
 import java.util.function.Function;

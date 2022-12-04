@@ -1,9 +1,9 @@
 package com.guipalm4.codeflix.admin.catalogo.application.category.update;
 
-import com.guipalm4.codeflix.admin.domain.category.Category;
-import com.guipalm4.codeflix.admin.domain.category.CategoryGateway;
-import com.guipalm4.codeflix.admin.domain.category.CategoryID;
-import com.guipalm4.codeflix.admin.domain.exceptions.DomainException;
+import com.guipalm4.codeflix.admin.catalogo.domain.category.Category;
+import com.guipalm4.codeflix.admin.catalogo.domain.category.CategoryGateway;
+import com.guipalm4.codeflix.admin.catalogo.domain.category.CategoryID;
+import com.guipalm4.codeflix.admin.catalogo.domain.exceptions.DomainException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

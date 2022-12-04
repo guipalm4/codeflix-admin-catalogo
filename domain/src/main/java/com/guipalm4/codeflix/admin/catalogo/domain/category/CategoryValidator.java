@@ -1,8 +1,8 @@
-package com.guipalm4.codeflix.admin.domain.category;
+package com.guipalm4.codeflix.admin.catalogo.domain.category;
 
-import com.guipalm4.codeflix.admin.domain.validation.Error;
-import com.guipalm4.codeflix.admin.domain.validation.ValidationHandler;
-import com.guipalm4.codeflix.admin.domain.validation.Validator;
+import com.guipalm4.codeflix.admin.catalogo.domain.validation.Error;
+import com.guipalm4.codeflix.admin.catalogo.domain.validation.ValidationHandler;
+import com.guipalm4.codeflix.admin.catalogo.domain.validation.Validator;
 
 public class CategoryValidator extends Validator {
 

@@ -1,6 +1,6 @@
-package com.guipalm4.codeflix.admin.domain.category;
+package com.guipalm4.codeflix.admin.catalogo.domain.category;
 
-import com.guipalm4.codeflix.admin.domain.pagination.Pagination;
+import com.guipalm4.codeflix.admin.catalogo.domain.pagination.Pagination;
 
 import java.util.Optional;
 

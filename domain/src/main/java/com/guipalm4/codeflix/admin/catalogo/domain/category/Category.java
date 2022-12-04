@@ -1,7 +1,7 @@
-package com.guipalm4.codeflix.admin.domain.category;
+package com.guipalm4.codeflix.admin.catalogo.domain.category;
 
-import com.guipalm4.codeflix.admin.domain.AggregateRoot;
-import com.guipalm4.codeflix.admin.domain.validation.ValidationHandler;
+import com.guipalm4.codeflix.admin.catalogo.domain.AggregateRoot;
+import com.guipalm4.codeflix.admin.catalogo.domain.validation.ValidationHandler;
 
 import java.time.Instant;
 import java.util.Objects;

@@ -1,4 +1,4 @@
-package com.guipalm4.codeflix.admin.domain.category;
+package com.guipalm4.codeflix.admin.catalogo.domain.category;
 
 public record CategorySearchQuery(
         int page,

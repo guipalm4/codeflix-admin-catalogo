@@ -1,6 +1,6 @@
-package com.guipalm4.codeflix.admin.domain.exceptions;
+package com.guipalm4.codeflix.admin.catalogo.domain.exceptions;
 
-import com.guipalm4.codeflix.admin.domain.validation.Error;
+import com.guipalm4.codeflix.admin.catalogo.domain.validation.Error;
 
 import java.util.List;
 

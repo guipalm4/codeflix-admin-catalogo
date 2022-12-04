@@ -1,4 +1,4 @@
-package com.guipalm4.codeflix.admin.domain.validation;
+package com.guipalm4.codeflix.admin.catalogo.domain.validation;
 
 import java.util.List;
 

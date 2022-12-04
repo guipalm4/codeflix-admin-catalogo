@@ -1,6 +1,6 @@
-package com.guipalm4.codeflix.admin.domain.category;
+package com.guipalm4.codeflix.admin.catalogo.domain.category;
 
-import com.guipalm4.codeflix.admin.domain.Identifier;
+import com.guipalm4.codeflix.admin.catalogo.domain.Identifier;
 
 import java.util.Objects;
 import java.util.UUID;
